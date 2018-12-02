@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- Etudiants: Alexandre Julien 1012389 & Sam Chandavong 1004915-->
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <title>Inscription</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navContainer">
+            <nav>
+                <ul>
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="commerce.html">Commerce</a></li>
+                    <li><a href="inscription.html">Inscription</a></li>
+                    <li><a href="design.html">Design</a></li>
+                    <li><a href="a_propos.html">À Propos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mainContainer">
+            <p>
+                Inscrivez-vous en tant que membres et courez la chance de gagner
+                des voyages vers les meilleures destinations de plongées !
+            </p>
+            <main>
+                <form name="inscription" method="POST" id="inscription" action="http://www-etud.iro.umontreal.ca/~chartral/ift1005/form_print.php">
+                    <p>
+                        Les informations obligatoires sont marquées d'un astérisque (*).
+                    </p>
+                    <label for="email">* Email:</label>
+                    <input type="email" name="email" id="email" size="25" required>
+                    
+                    <label for="firstName">* Prénom:</label>
+                    <input type="text" name="firstName" id="firstName" size="25" required>
+
+                    <label for="lastName">* Nom:</label>
+                    <input type="text" name="lastName" id="lastName" size="25" required>
+
+                    <label for="phone">Téléphone:</label>
+                    <input type="tel" name="phone" id="phone" size="25" pattern="^[0-9-+s()]*$">
+
+                    <input type="submit" value="Soumettre">
+                </form>
+            </main>
+        </div>
+        <footer>
+        </footer>
+    </div>
+</body>
+</html>
