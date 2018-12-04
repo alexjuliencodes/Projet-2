@@ -1,9 +1,10 @@
+/* Etudiants: Alexandre Julien 1012389 & Sam Chandavong 1004915 */
 body {
-    background-image: url('./images/scuba_diving.jpg');
+    /* background-image: url('./images/scuba_diving.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
@@ -32,6 +33,34 @@ a:hover {
     color: lightblue;
 }
 
+input {
+    float: right;
+}
+
+table {
+    width: 80%;
+    margin: 1em auto 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table tr:first-child {
+    background-color: #021748;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: lightblue;
+}
+
+table .imgDescription {
+    background-color: white;
+}
+
+table .tableDescription {
+    text-align: left;
+}
+
 .mainContainer {
     padding: 0 1em;
     width: 80%;
@@ -43,23 +72,19 @@ a:hover {
     background-color: #021748;
 }
 
-#inscription {
-    display: flex;
-    flex-direction: column;
-}
-
 .formElementWrapper {
     white-space: nowrap;
     padding-bottom: 0.2em;
     width: 15em;
 }
 
-input {
-    float: right;
-}
-
 .formSubmit {
     width: 6em;
+}
+
+#inscription {
+    display: flex;
+    flex-direction: column;
 }
 
 /* Mobile */
@@ -67,11 +92,35 @@ input {
     nav ul {
         flex-direction: column;
     }
+
+    .mainContainer {
+        width: 100%;
+        padding: 0;
+    }
+
+    table {
+        width: 100%;
+        margin: 0;
+        font-size: 12px;
+    }
+
+    table img {
+        height: 75px;
+        width: 75px;
+    }
+
+    /* METTRE L'ID DE LA BANNER IMAGE ICI
+    {
+        display: none 
+    } */
 }
 
 /* Tablet */
 @media only all and (min-width: 769px) and (max-width: 1024px) {
-
+    table img {
+        height: 115px;
+        width: 115px;
+    }
 }
 
 /* Computer */
