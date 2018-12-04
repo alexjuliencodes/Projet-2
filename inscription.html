@@ -29,19 +29,23 @@
                     <p>
                         Les informations obligatoires sont marquées d'un astérisque (*).
                     </p>
-                    <label for="email">* Email:</label>
-                    <input type="email" name="email" id="email" size="25" required>
-                    
-                    <label for="firstName">* Prénom:</label>
-                    <input type="text" name="firstName" id="firstName" size="25" required>
-
-                    <label for="lastName">* Nom:</label>
-                    <input type="text" name="lastName" id="lastName" size="25" required>
-
-                    <label for="phone">Téléphone:</label>
-                    <input type="tel" name="phone" id="phone" size="25" pattern="^[0-9-+s()]*$">
-
-                    <input type="submit" value="Soumettre">
+                    <span class="formElementWrapper">
+                        <label for="email">* Email:</label>
+                        <input type="email" name="email" id="email" required>
+                    </span>
+                    <span class="formElementWrapper">
+                        <label for="firstName">* Prénom:</label>
+                        <input type="text" name="firstName" id="firstName" required>
+                    </span>
+                    <span class="formElementWrapper">
+                        <label for="lastName">* Nom:</label>
+                        <input type="text" name="lastName" id="lastName" required>
+                    </span>
+                    <span class="formElementWrapper">
+                        <label for="phone">Téléphone:</label>
+                        <input type="tel" name="phone" id="phone" pattern="^[0-9-+s()]*$">
+                    </span>
+                    <input class="formSubmit" type="submit" value="Soumettre">
                 </form>
             </main>
         </div>
