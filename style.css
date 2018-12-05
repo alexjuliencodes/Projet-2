@@ -24,7 +24,6 @@ nav a, nav a:visited, nav a:active, footer a {
 }
 
 nav a:hover, footer a:hover {
-    font-size: bold;
     color: lightblue;
 }
 
@@ -212,9 +211,4 @@ table #tableDescription ul li {
         height: 115px;
         width: 115px;
     }
-}
-
-/* Computer */
-@media only all and (min-width: 1025px) {
-
 }
