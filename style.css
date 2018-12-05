@@ -18,12 +18,12 @@ nav ul li {
     padding: 0 0.5em;
 }
 
-a, a:visited, a:active {
+nav a, nav a:visited, nav a:active, footer a {
     text-decoration: none;
     color: white;
 }
 
-a:hover {
+nav a:hover, footer a:hover {
     font-size: bold;
     color: lightblue;
 }
@@ -63,13 +63,25 @@ table .tableDescription {
     text-align: right;
 }
 
-#bannerImg {
-    background-image: url('./images/banner.jpg');
+#mainBannerImg, #mediumBannerImg {
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: initial;
     background-repeat: no-repeat;
+}
+
+#bannerContainer {
+    position: relative;
+}
+
+#mainBannerImg {
+    background-image: url('./images/banner.jpg');
     height: 25em;
+}
+
+#mediumBannerImg {
+    background-image: url('./images/banner_medium.jpg');
+    height: 15em;
 }
 
 #bannerBar {
@@ -78,16 +90,14 @@ table .tableDescription {
     position: absolute;
     bottom: 0;
     width: 100%;
-    margin-bottom: 1.2em;
-    height: 2em;
+    margin: 0.5em 0 0 0;
 }
 
-#bannerBar p {
-
+#bannerBar h3, #bannerBar p {
+    margin: 0;
 }
 
 #formSubmit {
-    /* margin-left: 5.4em; */
     margin-left: 10.89em;
     width: 6em;
 }
@@ -150,10 +160,14 @@ table .tableDescription {
         width: 90%;
     }
 
-    #bannerImg {
+    #mainBannerImg {
         background-image: url('./images/banner_small.jpg');
-        background-attachment: initial;
         height: 10em;
+    }
+
+    #mediumBannerImg {
+        background-image: none;
+        height: 0;
     }
 
     #bannerBar {
