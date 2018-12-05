@@ -1,10 +1,5 @@
 /* Etudiants: Alexandre Julien 1012389 & Sam Chandavong 1004915 */
 body {
-    /* background-image: url('./images/scuba_diving.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat; */
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
@@ -20,7 +15,7 @@ nav ul {
 }
 
 nav ul li {
-    padding: 0 0.5em 0 0.5em;
+    padding: 0 0.5em;
 }
 
 a, a:visited, a:active {
@@ -39,7 +34,7 @@ input {
 
 table {
     width: 80%;
-    margin: 1em auto 0 auto;
+    margin: 0 auto 0 auto;
     text-align: center;
     border-collapse: collapse;
 }
@@ -61,24 +56,39 @@ table .tableDescription {
     text-align: left;
 }
 
-.mainContainer {
-    padding: 0 1em;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.navContainer {
-    background-color: #021748;
-}
-
 .formElementWrapper {
     white-space: nowrap;
     padding-bottom: 0.2em;
-    width: 15em;
+    width: 18em;
+    text-align: right;
 }
 
-.formSubmit {
+#bannerImg {
+    background-image: url('./images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 25em;
+}
+
+#bannerBar {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 1.2em;
+    height: 2em;
+}
+
+#bannerBar p {
+
+}
+
+#formSubmit {
+    /* margin-left: 5.4em; */
+    margin-left: 10.89em;
     width: 6em;
 }
 
@@ -87,21 +97,48 @@ table .tableDescription {
     flex-direction: column;
 }
 
+#mainContainer {
+    padding: 1em 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navContainer {
+    background-color: #021748;
+}
+
+#footerText {
+    padding: 1em 0;
+    text-align: center;
+    background-color: #021748;
+    color: white;
+}
+
+#footerText ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
 /* Mobile */
 @media only all and (max-width: 768px) {
+    body {
+        font-size: 12px;
+        min-width: 215px;
+    }
+
     nav ul {
         flex-direction: column;
     }
 
-    .mainContainer {
-        width: 100%;
-        padding: 0;
+    nav ul li {
+        text-align: center;
     }
 
     table {
         width: 100%;
         margin: 0;
-        font-size: 12px;
     }
 
     table img {
@@ -109,10 +146,23 @@ table .tableDescription {
         width: 75px;
     }
 
-    /* METTRE L'ID DE LA BANNER IMAGE ICI
-    {
-        display: none 
-    } */
+    #mainContainer {
+        width: 90%;
+    }
+
+    #bannerImg {
+        background-image: url('./images/banner_small.jpg');
+        background-attachment: initial;
+        height: 10em;
+    }
+
+    #bannerBar {
+        position: relative;
+    }
+
+    #formSubmit {
+        margin-left: 5.4em;
+    }
 }
 
 /* Tablet */

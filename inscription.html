@@ -7,8 +7,8 @@
     <title>Inscription</title>
 </head>
 <body>
-    <div class="container">
-        <div class="navContainer">
+    <div id="container">
+        <div id="navContainer">
             <nav>
                 <ul>
                     <li><a href="accueil.html">Accueil</a></li>
@@ -19,7 +19,7 @@
                 </ul>
             </nav>
         </div>
-        <div class="mainContainer">
+        <div id="mainContainer">
             <p>
                 Inscrivez-vous en tant que membre et courez la chance de gagner
                 des voyages vers les meilleures destinations de plongée !
@@ -30,26 +30,38 @@
                         Les informations obligatoires sont marquées d'un astérisque (*).
                     </p>
                     <span class="formElementWrapper">
-                        <label for="email">* Email:</label>
+                        <label for="email">* Email &nbsp;</label>
                         <input type="email" name="email" id="email" required>
                     </span>
                     <span class="formElementWrapper">
-                        <label for="firstName">* Prénom:</label>
+                        <label for="firstName">* Prénom &nbsp;</label>
                         <input type="text" name="firstName" id="firstName" required>
                     </span>
                     <span class="formElementWrapper">
-                        <label for="lastName">* Nom:</label>
+                        <label for="lastName">* Nom &nbsp;</label>
                         <input type="text" name="lastName" id="lastName" required>
                     </span>
                     <span class="formElementWrapper">
-                        <label for="phone">Téléphone:</label>
+                        <label for="phone">Téléphone &nbsp;</label>
                         <input type="tel" name="phone" id="phone" pattern="^[0-9-+s()]*$">
                     </span>
-                    <input class="formSubmit" type="submit" value="Soumettre">
+                    <input id="formSubmit" type="submit" value="Soumettre">
                 </form>
             </main>
         </div>
         <footer>
+            <div id="footerText">
+                <small>
+                    SCUBA BLEU, 555 rue De L'Océan, Gaspé, Canada<br>
+                    Copyright &copy; Scuba bleu 2018. Tout droits réservés<br>
+                    <a href="tel:514-555-1234">Tél : 514-555-1234</a><br>
+                    <h3>Service à la clientèle - Heure de l'est</h3>
+                    <ul>
+                        <li>Lundi au Vendredi: 8:00-21:00</li>
+                        <li>Samedi & Dimanche: 8:00-17:00</li>
+                    </ul>
+                </small>
+            </div>
         </footer>
     </div>
 </body>
